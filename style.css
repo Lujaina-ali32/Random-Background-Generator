@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f0f4f8;
+  color: #333;
+  transition: background-color 0.6s ease;
+  user-select: none;
+}
+
+/* Main heading */
+h1:first-of-type {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: color 0.5s ease;
+}
+
+/* By Lujaina Ali heading */
+h1:last-of-type {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  font-style: italic;
+  margin-top: 25px;
+  letter-spacing: 1.1px;
+  user-select: none;
+  transition: color 0.5s ease;
+}
+
+/* Button styling */
+button#btn {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  border: none;
+  border-radius: 35px;
+  padding: 12px 40px;          /* Chhota kiya padding */
+  font-size: 1.1rem;           /* Font size kam kiya */
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 198, 255, 0.4);  /* Thoda subtle shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 1.5px;       /* Letter spacing thoda kam kiya */
+  user-select: none;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hover effect */
+button#btn:hover {
+  background: linear-gradient(135deg, #005fcc, #00aaff);
+  box-shadow: 0 6px 18px rgba(0, 160, 255, 0.7);  /* Thoda kam intense */
+  transform: scale(1.07);
+}
+
+/* Active (pressed) effect */
+button#btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(0, 140, 220, 0.5);
+  outline: none;
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+  h1:first-of-type {
+    font-size: 1.8rem;
+  }
+  h1:last-of-type {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+  button#btn {
+    font-size: 1rem;
+    padding: 10px 35px;
+    letter-spacing: 1.3px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1:first-of-type {
+    font-size: 1.5rem;
+  }
+  h1:last-of-type {
+    font-size: 0.8rem;
+  }
+  button#btn {
+    font-size: 0.9rem;
+    padding: 8px 30px;
+    letter-spacing: 1.1px;
+  }
+}
+
+
+
+
